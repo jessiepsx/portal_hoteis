@@ -16,7 +16,7 @@ Este projeto é um **portal fictício de hospedagem** criado com foco em front-e
 
 ## 📸 Layout
 
-<img src="img/foto3.jpg" width="300px" alt="Exemplo de hotel">  
+<img src="img/foto10.jpg" width="300px" alt="Exemplo de hotel">  
 *Visual moderno com destaque para os destinos de luxo e natureza.*
 
 ---
