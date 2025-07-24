@@ -1,0 +1,295 @@
+/* --- 1. Reset CSS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- 2. Cores para o tema de Hotéis --- */
+:root {
+    --primary-purple: #6959c5; 
+    --dark-purple: #4B0082;   
+    --light-purple: #9370DB;  
+    --lighter-purple-bg: #E6E6FA; 
+    --text-dark: #343a40;    
+    --text-light: #6c757d;   
+    --transition: .5s;      
+    --margin-top-section: 100px; 
+    --form-blue: rgb(20,20,100); 
+}
+
+/* --- 3. Estilos Base HTML --- */
+html {
+    font-size: 62.5%; 
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem; 
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-dark); 
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-purple);
+    font-weight: 700; 
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--primary-purple); 
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto; 
+    display: block; 
+}
+
+/* --- 4. Estilos de Botões --- */
+.btn {
+    padding: 12px 3.5rem;
+    font-size: 1.8rem;
+    background-color: var(--light-purple); 
+    border: 2px solid var(--light-purple);
+    color: var(--color-light); 
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--light-purple);
+    border-color: var(--light-purple);
+}
+
+.btn-primary {
+    background-color: var(--light-purple);
+    border-color: var(--light-purple);
+    color: white; 
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-purple); 
+    border-color: var(--primary-purple);
+    color: white;
+}
+
+/* --- 5. Estilos de Header (Navbar) --- */
+.logo-text {
+    font-size: 2rem;
+    color: var(--primary-purple);
+    font-weight: 800;
+}
+
+.logo-icon {
+    color: var(--primary-purple);
+    margin-right: 10px;
+}
+
+.nav-item .nav-link {
+    font-weight: 700;
+    font-size: 1.6rem; 
+    color: var(--text-light);
+    padding: 0.25rem 0; 
+}
+
+.nav-item .nav-link:hover {
+    color: var(--primary-purple);
+}
+
+/* --- 6. Estilos de Seções Genéricas e Títulos --- */
+.my-mt {
+    margin-top: var(--margin-top-section);
+}
+
+.my-title {
+    color: var(--primary-purple);
+    font-weight: 800; 
+}
+
+.bg-blue-2 { 
+    background-color: var(--lighter-purple-bg);
+}
+
+/* --- 7. Estilos da Hero Section --- */
+.hero { 
+    width: 100%;
+    min-height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/foto7.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    color: white;
+}
+
+.hero-content {
+    width: 60%;
+    padding: 5rem; 
+    color: white;
+    text-align: left; 
+}
+
+.hero-content h2 {
+    font-size: 7vmin; 
+    margin-bottom: 1rem;
+}
+
+.hero-content p { 
+    font-weight: 600;
+    margin-bottom: 2rem;
+    line-height: 2.6rem;
+    font-size: 1.8rem; 
+}
+
+
+/* --- 11. Estilos de Formulário (Seção Contato e Cadastro) --- */
+.form-label { 
+    font-size: 1.6rem; 
+    color: var(--text-dark);
+}
+
+input.form-control,
+select.form-select,
+textarea.form-control {
+    width: 100%;
+    height: 50px; 
+    padding-left: 15px; 
+    font-size: 1.6rem; 
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+input.form-control:focus,
+select.form-select:focus,
+textarea.form-control:focus {
+    outline: none;
+    border-color: var(--light-purple); 
+    box-shadow: 0 0 0 0.25rem rgba(147, 112, 219, 0.25); 
+}
+
+textarea.form-control {
+    resize: none;
+    height: 130px;
+    padding-top: 10px; 
+}
+
+
+/* --- 12. Estilos de Ícones Sociais e Contato --- */
+.icon-social,
+.icon-contato, .social-icons {
+    font-size: 2rem;
+    color: var(--primary-purple);
+    transition: var(--transition);
+}
+
+.icon-social:hover {
+    color: var(--light-purple); 
+}
+
+/* --- 13. Estilos de Rodapé --- */
+footer {
+    background-color: var(--dark-purple); 
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+footer .social-icons a {
+    color: white; 
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: var(--light-purple); 
+}
+
+footer .social-icons .fa-github {
+    color: white;
+}
+
+
+/* --- 14. Media Queries --- */
+@media (max-width: 991.98px) { 
+    
+    .hero-content {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .col-lg-6, .col-lg-4, .col-lg-3 {
+        width: 100%; 
+        margin-bottom: 1rem; 
+    }
+
+    .col-lg-6.my-4.text-center { 
+        width: 50%; 
+}
+
+@media (max-width: 767.98px) { 
+    /* Ajustes para tablets e celulares */
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .col-lg-6.my-4.text-center { 
+        width: 100%;
+    }
+
+    /* Formulário seções */
+    .form .col-md-6 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .box { 
+        width: 90%;
+        text-align: center;
+    }
+
+    .box h2, .box p {
+        text-align: center;
+    }
+
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-form-item {
+        width: 100%;
+        padding: 0;
+    }
+
+    .box-form-button {
+        justify-content: center;
+    }
+
+
+}
+}
