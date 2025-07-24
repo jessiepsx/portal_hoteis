@@ -30,6 +30,14 @@ Este projeto é um **portal fictício de hospedagem** criado com foco em front-e
 - 🔠 **Google Fonts** — tipografia personalizada
 
 ---
+## 📬 Contato
+
+Se quiser acompanhar meus projetos ou trocar uma ideia, me encontra por aqui:
+
+- GitHub: [@jessiepsx](https://github.com/jessiepsx)
+- LinkedIn: [Jéssica Pereira](https://www.linkedin.com/in/jéssica-pereira-bb1202265)
+
+---
 
 
 
